@@ -7,5 +7,6 @@ Delhi Technological University Lab Programs for Data Structures (Second Year) fo
 ## Programs included in the file
 
 1. Write a C/C++ program to Implement Linear Search.
+1. Write a C/C++ program to Implement Binary Search.
 
 ---
