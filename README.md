@@ -1,4 +1,4 @@
-# DTU CO101/CO102 Lab File
+# DTU DS Lab File (CO201)
 
 Delhi Technological University Lab Programs for Data Structures (Second Year) for the course CO201 submitted by Vishal Das
 
