@@ -11,7 +11,7 @@ int main(void)
         for (int j = 0; j < k; j++)
             cin >> arr[i][j];
 
-    int **newArr = (int **)malloc(sizeof(int **) * (n - 1) * k);
+    int **newArr = new int*[n-1];
     cout
         << "Input row number to delete : ";
     cin >> delRow;
