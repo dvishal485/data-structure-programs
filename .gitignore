@@ -3,6 +3,10 @@
 !*/
 !*.*
 
+# Lab files
+*.docx
+*.pdf
+
 # Prerequisites
 *.d
 
