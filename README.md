@@ -16,5 +16,8 @@ Delhi Technological University Lab Programs for Data Structures (Second Year) fo
 1. Write a C/C++ program to implement two stacks using a single array.
     - [Implementation in C](./programs/program_06.c)
     - [Implementation in C++](./programs/program_06.cpp)
+1. Write a C/C++ program to create a sparse matrix using arrays.
+    - [Implementation in C](./programs/program_07.c)
+    - [Implementation in C++](./programs/program_07.cpp)
 
 ---
