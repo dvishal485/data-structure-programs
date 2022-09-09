@@ -1,4 +1,3 @@
-#define SWAP(x, y, t) (t = x, x = y, y = t)
 #include <iostream>
 using namespace std;
 
@@ -9,16 +8,20 @@ public:
     int column;
     int value;
 };
-template <int r, int c>
+
 class SparseMatrix
 {
+public:
     Element *elements;
     int rows;
     int columns;
-
-public:
     int non_zero_terms;
-    SparseMatrix(void) {}
+    SparseMatrix(void)
+    {
+        non_zero_terms = 0;
+        rows = 0;
+        columns = 0;
+    }
     SparseMatrix(const SparseMatrix *s)
     {
         rows = s->rows;
@@ -26,7 +29,7 @@ public:
         elements = s->elements;
         non_zero_terms = s->non_zero_terms;
     }
-    SparseMatrix(const int arr[r][c])
+    SparseMatrix(const int *arr, int r, int c)
     {
         rows = r;
         columns = c;
@@ -34,15 +37,17 @@ public:
         int non_zero = 0;
         for (int i = 0; i < r; i++)
         {
+            int k = i * c;
             for (int j = 0; j < c; j++)
             {
-                if (arr[i][j] != 0)
+                if (arr[k] != 0)
                 {
                     Element *element = &elements[non_zero++];
                     element->row = i;
                     element->column = j;
-                    element->value = arr[i][j];
+                    element->value = arr[k];
                 }
+                k++;
             }
         }
         elements = (Element *)realloc(elements, sizeof(Element) * non_zero);
@@ -51,7 +56,12 @@ public:
 
     SparseMatrix add(SparseMatrix s)
     {
-        Element *result = new Element[r * c];
+        if (s.rows != rows || s.columns != columns)
+        {
+            cout << "ERROR : Addition is only possible for same dimension matrix" << endl;
+            return SparseMatrix();
+        }
+        Element *result = new Element[rows * columns];
         int t1 = 0, t2 = 0, result_terms = 0;
         while (t1 < non_zero_terms && t2 < s.non_zero_terms)
         {
@@ -111,8 +121,8 @@ public:
         result = (Element *)realloc(result, sizeof(Element) * result_terms);
 
         SparseMatrix m = SparseMatrix();
-        m.rows = r;
-        m.columns = c;
+        m.rows = rows;
+        m.columns = columns;
         m.elements = result;
         m.non_zero_terms = result_terms;
         return m;
@@ -144,12 +154,20 @@ public:
         }
     }
 
-    void transpose()
+    SparseMatrix transpose()
     {
-        int temp;
-        SWAP(rows, columns, temp);
+        SparseMatrix result = SparseMatrix();
+        result.elements = new Element[non_zero_terms];
         for (int i = 0; i < non_zero_terms; i++)
-            SWAP(elements[i].row, elements[i].column, temp);
+        {
+            result.elements[i].column = elements[i].row;
+            result.elements[i].row = elements[i].column;
+            result.elements[i].value = elements[i].value;
+        }
+        result.columns = rows;
+        result.rows = columns;
+        result.non_zero_terms = non_zero_terms;
+        return result;
     }
 };
 
@@ -166,11 +184,11 @@ int main()
                       {0, 2, 0, 0},
                       {-6, 0, -2, 0}};
 
-    SparseMatrix m = SparseMatrix<5, 4>(arr);
+    SparseMatrix m = SparseMatrix((int *)arr, 5, 4);
     printf("Generated Sparse Matrix 1 \n");
     m.printSparseMatrix();
 
-    SparseMatrix n = SparseMatrix<5, 4>(arr2);
+    SparseMatrix n = SparseMatrix((int *)arr2, 5, 4);
     printf("Generated Sparse Matrix 2 :\n");
     n.printSparseMatrix();
 
@@ -178,8 +196,8 @@ int main()
     SparseMatrix x = n.add(m);
     x.printSparseMatrix();
 
-    x.transpose();
+    SparseMatrix y = x.transpose();
     printf("Transposed Sparse Matrix :\n");
-    x.printSparseMatrix();
+    y.printSparseMatrix();
     return 0;
 }

@@ -8,7 +8,7 @@ public:
     int column;
     int value;
 };
-template <size_t r, size_t c>
+
 class SparseMatrix
 {
 public:
@@ -16,7 +16,7 @@ public:
     int rows;
     int columns;
     int terms;
-    SparseMatrix(const int arr[r][c])
+    SparseMatrix(const int *arr, int r, int c)
     {
         rows = r;
         columns = c;
@@ -26,12 +26,12 @@ public:
         {
             for (int j = 0; j < c; j++)
             {
-                if (arr[i][j] != 0)
+                if (arr[i + j * c] != 0)
                 {
                     Element *element = &elements[non_zero++];
                     element->row = i;
                     element->column = j;
-                    element->value = arr[i][j];
+                    element->value = arr[i * c + j];
                 }
             }
         }
@@ -74,7 +74,7 @@ int main()
                      {0, 2, 0, 0},
                      {12, 0, -2, 0}};
 
-    SparseMatrix m = SparseMatrix<5, 4>(arr);
+    SparseMatrix m = SparseMatrix((int *)arr, 5, 4);
     printf("Generated Sparse Matrix :\n");
     m.printSparseMatrix();
     return 0;
