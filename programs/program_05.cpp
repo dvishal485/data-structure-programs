@@ -5,7 +5,7 @@ This program is written by Vivek Yadav
 #include <iostream>
 using namespace std;
 
-class DualStack
+class Stack
 {
     int capacity;
     int top;
@@ -26,12 +26,12 @@ class DualStack
     }
 
 public:
-    DualStack()
+    Stack()
         : capacity(5), top(-1), arr(nullptr)
     {
         copy_and_relocate(0, capacity);
     }
-    DualStack(int cap)
+    Stack(int cap)
         : capacity(cap), top(-1), arr(nullptr)
     {
         copy_and_relocate(0, capacity);
@@ -69,7 +69,7 @@ public:
 
 int main()
 {
-    DualStack s(10);
+    Stack s(10);
     s.push(5);
     s.push(10);
     s.push(3);
