@@ -1,16 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct
-{
+typedef struct {
     int top1;
     int top2;
     int capacity;
     int *array;
 } dualstack;
 
-dualstack *createDualStack(int capacity)
-{
+dualstack *createDualStack(int capacity) {
     dualstack *s = (dualstack *)malloc(sizeof(dualstack));
     s->array = (int *)malloc(sizeof(int) * capacity);
     s->top1 = -1;
@@ -18,8 +16,7 @@ dualstack *createDualStack(int capacity)
     return s;
 }
 
-int isEmpty(dualstack *s, int stack_id)
-{
+int isEmpty(dualstack *s, int stack_id) {
     if (stack_id == 1)
         return s->top1 == -1;
     if (stack_id == 2)
@@ -29,10 +26,8 @@ int isEmpty(dualstack *s, int stack_id)
     return 0;
 }
 
-void push(dualstack *s, int x, int stack_id)
-{
-    if (s->top1 + 1 == s->top2)
-    {
+void push(dualstack *s, int x, int stack_id) {
+    if (s->top1 + 1 == s->top2) {
         printf("Error : Stack Overflow\n");
         return;
     }
@@ -44,55 +39,40 @@ void push(dualstack *s, int x, int stack_id)
         printf("Invalid Stack ID\n");
 }
 
-void pop(dualstack *s, int stack_id)
-{
-    if (stack_id == 1)
-    {
+void pop(dualstack *s, int stack_id) {
+    if (stack_id == 1) {
         if (s->top1 != -1)
             s->top1--;
         else
             printf("Stack 1 is already empty\n");
-    }
-    else if (stack_id == 2)
-    {
+    } else if (stack_id == 2) {
         if (s->top2 != s->capacity)
             s->top2++;
         else
             printf("Stack 2 is already empty\n");
-    }
-    else
+    } else
         printf("Invalid Stack ID\n");
 }
 
-int top(dualstack *s, int stack_id)
-{
-    if (stack_id == 1)
-    {
+int top(dualstack *s, int stack_id) {
+    if (stack_id == 1) {
         if (!isEmpty(s, 1))
             return s->array[s->top1];
-    }
-    else if (stack_id == 2)
-    {
+    } else if (stack_id == 2) {
         if (!isEmpty(s, 2))
             return s->array[s->top2];
-    }
-    else
+    } else
         printf("Invalid Stack ID");
     return -1;
 }
-void displayStackTop(dualstack *s)
-{
+void displayStackTop(dualstack *s) {
     printf("Stack 1 : %d\n", top(s, 1));
     printf("Stack 2 : %d\n\n", top(s, 2));
 }
 
-int isFull(dualstack *s)
-{
-    return s->top1 == s->top2 - 1;
-}
+int isFull(dualstack *s) { return s->top1 == s->top2 - 1; }
 
-int main(void)
-{
+int main(void) {
     dualstack *s = createDualStack(10);
 
     printf("Stack 1 is empty : %d\n", isEmpty(s, 1));

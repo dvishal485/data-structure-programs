@@ -1,16 +1,14 @@
 #include <iostream>
 using namespace std;
 
-class DualStack
-{
+class DualStack {
     int top1;
     int top2;
     int capacity;
 
-public:
+  public:
     int *array;
-    DualStack(int c)
-    {
+    DualStack(int c) {
         capacity = c;
         array = new int[c];
         top1 = -1;
@@ -21,18 +19,15 @@ public:
     int top(int);
     bool isEmpty(int stack_id);
     bool isFull();
-    void displayStackTop()
-    {
+    void displayStackTop() {
         cout << "Stack 1 : " << top(1) << endl;
         cout << "Stack 2 : " << top(2) << endl;
         cout << endl;
     }
 };
 
-void DualStack::push(int x, int stack_id)
-{
-    if (top1 + 1 == top2)
-    {
+void DualStack::push(int x, int stack_id) {
+    if (top1 + 1 == top2) {
         cout << "Error : Stack Overflow" << endl;
         return;
     }
@@ -44,28 +39,22 @@ void DualStack::push(int x, int stack_id)
         cout << "Invalid Stack ID" << endl;
 }
 
-void DualStack::pop(int stack_id)
-{
-    if (stack_id == 1)
-    {
+void DualStack::pop(int stack_id) {
+    if (stack_id == 1) {
         if (top1 != -1)
             top1--;
         else
             cout << "Stack 1 is already empty";
-    }
-    else if (stack_id == 2)
-    {
+    } else if (stack_id == 2) {
         if (top2 != capacity)
             top2++;
         else
             cout << "Stack 2 is already empty";
-    }
-    else
+    } else
         cout << "Invalid Stack ID" << endl;
 }
 
-int DualStack::top(int stack_id)
-{
+int DualStack::top(int stack_id) {
     if (stack_id == 1)
         return array[top1];
     else if (stack_id == 2)
@@ -75,8 +64,7 @@ int DualStack::top(int stack_id)
     return INT32_MIN;
 }
 
-bool DualStack::isEmpty(int stack_id)
-{
+bool DualStack::isEmpty(int stack_id) {
     if (stack_id == 1)
         return top1 == -1;
     if (stack_id == 2)
@@ -86,13 +74,9 @@ bool DualStack::isEmpty(int stack_id)
     return 0;
 }
 
-bool DualStack::isFull()
-{
-    return top1 == top2 - 1;
-}
+bool DualStack::isFull() { return top1 == top2 - 1; }
 
-int main(void)
-{
+int main(void) {
     DualStack s(10);
 
     cout << "Stack 1 is empty : " << s.isEmpty(1) << endl

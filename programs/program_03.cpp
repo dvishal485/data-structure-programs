@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main(void)
-{
+int main(void) {
     int n, top;
     cout << "Input max array size : ";
     cin >> n;
@@ -18,13 +17,12 @@ int main(void)
     int mid = top / 2;
     for (int i = top; i > mid; i--)
         a[i] = a[i - 1];
-    cout << endl
-         << "Input the element to be inserted : ";
+    cout << endl << "Input the element to be inserted : ";
     cin >> a[mid];
     top++;
     cout << "Array elements after insertion : ";
     for (int i = 0; i < top; i++)
         cout << a[i] << " ";
-cout << endl;
+    cout << endl;
     return 0;
 }

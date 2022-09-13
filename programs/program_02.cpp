@@ -1,11 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int binarySearch(int array[], int key, int right_index)
-{
+int binarySearch(int array[], int key, int right_index) {
     int left_index = 0;
-    while (left_index <= right_index)
-    {
+    while (left_index <= right_index) {
         int mid_index = (left_index + right_index) / 2;
         int middle_element = array[mid_index];
         if (middle_element == key)
@@ -18,8 +16,7 @@ int binarySearch(int array[], int key, int right_index)
     return -1;
 }
 
-int main(void)
-{
+int main(void) {
     int size, key;
     cout << "Input the size of sorted array (ascending) : ";
     cin >> size;
