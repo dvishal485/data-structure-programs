@@ -29,6 +29,7 @@ Delhi Technological University Lab Programs for Data Structures (Second Year) fo
     - [Implementation in C++](./programs/program_07.cpp)
 1. Write a C/C++  program to find the minimum element of the stack in constant time without using extra space.
     - [Implementation in C](./programs/program_08.c)
+    - [Implementation in C++](./programs/program_08.cpp)
 1. Write a C/C++ program to create a sparse matrix using arrays.
     - [Implementation in C](./programs/sparse_matrix.c)
     - [Implementation in C++](./programs/sparse_matrix.cpp)
