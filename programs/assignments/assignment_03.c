@@ -36,10 +36,9 @@ struct node *swapAlterNodes(struct node *head) {
 }
 
 void traverse(struct node *head) {
-    struct node *current = head;
-    while (current != NULL) {
-        printf("%d ", current->data);
-        current = current->next;
+    while (head != NULL) {
+        printf("%d ", head->data);
+        head = head->next;
     }
     printf("\n");
 }
