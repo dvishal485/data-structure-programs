@@ -12,6 +12,7 @@ stack *createStack(int capacity) {
     s->array = (int *)(malloc(sizeof(int) * capacity));
     s->capacity = capacity;
     s->top = -1;
+    return s;
 }
 void readStack(stack *s) {
     printf("Stack : ");
