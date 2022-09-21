@@ -1,6 +1,6 @@
-# DTU DS Lab File (CO201)
+# DTU DS Lab File and Assignment (CO201)
 
-Delhi Technological University Lab Programs for Data Structures (Second Year) for the course CO201 submitted by Vishal Das
+Delhi Technological University Lab Programs & Assignment Programs for Data Structures (Second Year) for the course CO201 submitted by Vishal Das
 
 ---
 
@@ -33,5 +33,22 @@ Delhi Technological University Lab Programs for Data Structures (Second Year) fo
 1. Write a C/C++ program to create a sparse matrix using arrays.
     - [Implementation in C](./programs/sparse_matrix.c)
     - [Implementation in C++](./programs/sparse_matrix.cpp)
+
+---
+
+# Assignment Questions
+
+1. [Given the head of a linked list and an integer n, write a program to delete nth
+node from the end of linked list and return the head of new list.](./programs/assignments/assignment_01.c)
+1. [We have discussed the problem of implementing Queue using two stacks using an
+approach where the enqueue operation is constant time while dequeue operation
+takes O(n) time. Think about a different approach of implementing queue using
+two stacks where enqueue operation may be costly but the dequeue operation
+remains O(1). Write the enqueue and dequeue operations code for this new
+approach.](./programs/assignments/assignment_02.c)
+1. [Given a linked list, write a program to swap every two adjacent nodes and return
+its head. You must solve the problem without modifying the values in the linked
+list nodes. For a linked list with odd number of nodes, last node should not be
+swapped.](./programs/assignments/assignment_03.c)
 
 ---
