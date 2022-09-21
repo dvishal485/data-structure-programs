@@ -14,6 +14,7 @@ stack *createStack(int capacity) {
     s->top = -1;
     return s;
 }
+
 void readStack(stack *s) {
     printf("Stack : ");
     for (int i = 0; i <= s->top; i++)
@@ -50,4 +51,6 @@ void push(stack *s, int x) {
 int top(stack *s) {
     if (s->top != -1)
         return s->array[s->top];
+    printf("ERROR : Stack is empty");
+    return -1;
 }
