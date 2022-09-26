@@ -21,7 +21,7 @@ struct node *createNode(int data, struct node *next) {
 }
 
 struct node *swapAlterNodes(struct node *head) {
-    if (head->next == NULL)
+    if (!head || !head->next)
         return head;
     struct node *a, *b, *c;
     a = head;
