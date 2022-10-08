@@ -16,63 +16,53 @@ queue *createQ(int capacity) {
     return q;
 };
 
-char isEmpty(queue *q) {
+char isQueueEmpty(queue *q) {
     if (q->front == q->rear && q->front == -1)
         return 1;
     return 0;
 };
 
-char isFull(queue *q) {
+char isQueueFull(queue *q) {
     if (q->rear == q->capacity - 1)
         return 1;
     return 0;
 };
 
+void showQ(queue *q) {
+    printf("Queue : ");
+    for (int i = q->front; i <= q->rear; i++)
+        printf("%d ", q->arr[i]);
+    printf("\n");
+}
+
 void enqueue(queue *q, int value) {
-    if (isFull(q)) {
+    if (isQueueFull(q)) {
         printf("ERROR : Queue is full\n");
         return;
     }
-    if (isEmpty(q)) {
-        q->arr[++q->rear] = value;
-        q->front = q->rear;
+    if (isQueueEmpty(q)) {
+        q->arr[0] = value;
+        q->front = q->rear = 0;
         return;
     }
     q->arr[++q->rear] = value;
 };
 
 void dequeue(queue *q) {
-    if (isEmpty(q)) {
+    if (isQueueEmpty(q)) {
         printf("ERROR : Queue is empty\n");
         return;
     }
     q->front++;
-    if (q->front > q->rear)
+    if (q->front > q->rear){
         q->front = q->rear = -1;
+    }
 };
 
 int peek(queue *q) {
-    if (isEmpty(q)) {
+    if (isQueueEmpty(q)) {
         printf("ERROR : Queue is empty\n");
         exit(-1);
     }
     return q->arr[q->front];
-};
-
-int main(void) {
-    queue *q = createQ(10);
-    enqueue(q, 14);
-    enqueue(q, 18);
-    enqueue(q, 5);
-    printf("Peek : %d\n", peek(q));
-    dequeue(q);
-    printf("Peek : %d\n", peek(q));
-    dequeue(q);
-    printf("Peek : %d\n", peek(q));
-    dequeue(q);
-    dequeue(q);
-    enqueue(q, 7);
-    enqueue(q, 2);
-    printf("Peek : %d\n", peek(q));
-    return 0;
 };
