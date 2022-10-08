@@ -33,6 +33,8 @@ Delhi Technological University Lab Programs & Assignment Programs for Data Struc
 1. Write a C/C++ program to create a sparse matrix using arrays.
     - [Implementation in C](./programs/sparse_matrix.c)
     - [Implementation in C++](./programs/sparse_matrix.cpp)
+1. Write a C/C++ program to implement Queue Data structure.
+    - [Implementation in C](./programs/program_11.c)
 
 ---
 
