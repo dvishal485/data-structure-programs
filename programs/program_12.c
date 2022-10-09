@@ -4,7 +4,7 @@
 
 void *reverseKElement(queue *q, int k) {
     stack *temp = createStack(k);
-    for (int i = q->front; i < k; i++) {
+    for (int i = q->front; i < q->front + k; i++) {
         push(temp, peek(q));
         dequeue(q);
     }
