@@ -34,6 +34,8 @@ Delhi Technological University Lab Programs & Assignment Programs for Data Struc
     - [Implementation in C](./programs/program_09.c)
     - [Different approach in C](./programs/sparse_matrix.c)
     - [Different approach in C++](./programs/sparse_matrix.cpp)
+1. Write a C/C++ program to perform the addition, multiplication and transpose operations on sparse matrix given in compact form.
+    - [Implementation in C](./programs/program_10.c)
 1. Write a C/C++ program to implement Queue Data structure.
     - [Implementation in C](./programs/program_11.c)
 1. Write a  C/C++ program to reverse the first k elements of a given Queue.
