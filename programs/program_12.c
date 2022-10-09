@@ -3,9 +3,11 @@
 #include <stdio.h>
 
 void *reverseKElement(queue *q, int k) {
-    stack *temp = createStack(k);
-    for (int i = q->front; i < q->front + k; i++) {
-        push(temp, peek(q));
+    stack *s = createStack(k);
+    int upto = q->front + k;
+
+    for (int i = q->front; i < upto; i++) {
+        push(s, peek(q));
         dequeue(q);
     }
     queue *t = createQ(q->capacity - k);
@@ -13,9 +15,9 @@ void *reverseKElement(queue *q, int k) {
         enqueue(t, peek(q));
         dequeue(q);
     }
-    while (!isEmpty(temp)) {
-        enqueue(q, top(temp));
-        pop(temp);
+    while (!isEmpty(s)) {
+        enqueue(q, top(s));
+        pop(s);
     }
     while (!isQueueEmpty(t)) {
         enqueue(q, peek(t));
