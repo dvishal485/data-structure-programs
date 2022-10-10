@@ -18,7 +18,7 @@ int main(void) {
     TABLE;
     for (int i = 1; i <= a[0].value; i++)
         scanf("%d %d %d", &a[i].row, &a[i].col, &a[i].value);
-    printf("Given Sparse Matrix is represented as : ");
+    printf("Given Sparse Matrix is represented as :\n");
     for (int i = 1; i <= a[0].value; i++)
         printf("%d\t%d\t%d\n", a[i].row, a[i].col, a[i].value);
     return 0;

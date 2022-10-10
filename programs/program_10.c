@@ -123,6 +123,7 @@ int main(void) {
     // print A
     printf("Matrix A is represented as :\n");
     printSparseMatrix(a);
+    printf("\n");
 
     b = createSparseMatrix();
 
