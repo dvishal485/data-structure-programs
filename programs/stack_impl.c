@@ -29,13 +29,13 @@ void pop(stack *s) {
         printf("ERROR : Stack underflow");
 }
 
-int isFull(stack *s) {
+char isFull(stack *s) {
     if (s->top == s->capacity - 1)
         return 1;
     return 0;
 }
 
-int isEmpty(stack *s) {
+char isEmpty(stack *s) {
     if (s->top == -1)
         return 1;
     return 0;
@@ -52,5 +52,5 @@ int top(stack *s) {
     if (s->top != -1)
         return s->array[s->top];
     printf("ERROR : Stack is empty");
-    return -1;
+    exit(EXIT_FAILURE);
 }

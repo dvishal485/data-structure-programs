@@ -2,6 +2,12 @@
 
 Delhi Technological University Lab Programs & Assignment Programs for Data Structures (Second Year) for the course CO201 submitted by Vishal Das
 
+**Table of Contents**
+- [DTU DS Lab File and Assignment (CO201)](#dtu-ds-lab-file-and-assignment-co201)
+  - [Programs included in the file](#programs-included-in-the-file)
+  - [Data Structure Implementations in C](#data-structure-implementations-in-c)
+  - [Assignment Questions](#assignment-questions)
+
 ---
 
 ## Programs included in the file
@@ -43,7 +49,62 @@ Delhi Technological University Lab Programs & Assignment Programs for Data Struc
 
 ---
 
-# Assignment Questions
+## Data Structure Implementations in C
+
+1. [Stack](./programs/stack_impl.c)
+
+    | Function      | Return Type | Parameters           |
+    | :------------ | :---------- | :------------------- |
+    | `createStack` | `stack*`    | `int capacity`       |
+    | `readStack`   | `void`      | `stack* s`           |
+    | `pop`         | `void`      | `stack* s`           |
+    | `push`        | `void`      | `stack* s, int data` |
+    | `top`         | `int`       | `stack* s`           |
+    | `isFull`      | `char`      | `stack* s`           |
+    | `isEmpty`     | `char`      | `stack* s`           |
+
+1. [Queue](./programs/queue_impl.c)
+
+    | Function       | Return Type | Parameters            |
+    | :------------- | :---------- | :-------------------- |
+    | `createQ`      | `queue*`    | `int capacity`        |
+    | `showQ`        | `void`      | `queue* q`            |
+    | `dequeue`      | `void`      | `queue* q`            |
+    | `enqueue`      | `void`      | `queue* q, int value` |
+    | `peek`         | `int`       | `queue* q`            |
+    | `isQueueFull`  | `char`      | `queue* q`            |
+    | `isQueueEmpty` | `char`      | `queue* q`            |
+
+1. [Circular Queue](./programs/circularQ_impl.c)
+
+    | Function   | Return Type  | Parameters                |
+    | :--------- | :----------- | :------------------------ |
+    | `createQ`  | `circularQ*` | `int capacity`            |
+    | `showQ`    | `void`       | `circularQ* q`            |
+    | `dequeue`  | `void`       | `circularQ* q`            |
+    | `enqueue`  | `void`       | `circularQ* q, int value` |
+    | `peek`     | `int`        | `circularQ* q`            |
+    | `isQFull`  | `char`       | `circularQ* q`            |
+    | `isQEmpty` | `char`       | `circularQ* q`            |
+
+1. [Deque](./programs/deque_impl.c)
+
+    | Function      | Return Type | Parameters            |
+    | :------------ | :---------- | :-------------------- |
+    | `createDeque` | `deque*`    | `int capacity`        |
+    | `showFullQ`   | `void`      | `deque* q`            |
+    | `pop_back`    | `void`      | `deque* q`            |
+    | `pop_front`   | `void`      | `deque* q`            |
+    | `push_back`   | `void`      | `deque* q, int value` |
+    | `push_front`  | `void`      | `deque* q, int value` |
+    | `peek_back`   | `int`       | `deque* q`            |
+    | `peek_front`  | `int`       | `deque* q`            |
+    | `isQFull`     | `char`      | `deque* q`            |
+    | `isQEmpty`    | `char`      | `deque* q`            |
+
+---
+
+## Assignment Questions
 
 1. [Given the head of a linked list and an integer n, write a program to delete nth
 node from the end of linked list and return the head of new list.](./programs/assignments/assignment_01.c)
