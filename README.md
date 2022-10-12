@@ -46,6 +46,12 @@ Delhi Technological University Lab Programs & Assignment Programs for Data Struc
     - [Implementation in C](./programs/program_11.c)
 1. Write a  C/C++ program to reverse the first k elements of a given Queue.
     - [Implementation in C](./programs/program_12.c)
+1. Write a C/C++ program to check whether the given string is Palindrome or not using Double Ended Queue (DEQUE).
+    - [Implementation in C](./programs/program_13.c)
+1. Write a C/C++ program to implement Tower of Hanoi Problem using Stack.
+1. Write a C/C++ program to implement the Linked List Data structure and insert a new node at the beginning, and at a given position.
+1. Write a C/C++ program to split a given linked list into two sub-list as Front sub-list and Back sub-list, if odd number of the element then add the last element into the front list.
+1. Given a Sorted doubly linked list of positive integers and an integer, finds all the pairs (sum of two nodes data part) that is equal to the given integer value.
 
 ---
 
