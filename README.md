@@ -52,6 +52,7 @@ Delhi Technological University Lab Programs & Assignment Programs for Data Struc
 1. Write a C/C++ program to implement the Linked List Data structure and insert a new node at the beginning, and at a given position.
     - [Implementation in C](./programs/program_15.c)
 1. Write a C/C++ program to split a given linked list into two sub-list as Front sub-list and Back sub-list, if odd number of the element then add the last element into the front list.
+    - [Implementation in C](./programs/program_16.c)
 1. Given a Sorted doubly linked list of positive integers and an integer, finds all the pairs (sum of two nodes data part) that is equal to the given integer value.
 
 ---
