@@ -99,11 +99,11 @@ node *deleteFromEnd(node **pointer_to_head, int n) {
     return fake_head.next;
 }
 
-void printLL(node *pointer_to_head) {
+void printLL(node *head) {
     printf("Linked List : ");
-    while (pointer_to_head) {
-        printf("%d, ", pointer_to_head->value);
-        pointer_to_head = pointer_to_head->next;
+    while (head) {
+        printf("%d, ", head->value);
+        head = head->next;
     }
     printf("\n");
 }

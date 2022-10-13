@@ -108,6 +108,20 @@ Delhi Technological University Lab Programs & Assignment Programs for Data Struc
     | `isQFull`     | `char`      | `deque* q`            |
     | `isQEmpty`    | `char`      | `deque* q`            |
 
+1. [Linked List](./programs/ll_impl.c)
+
+    | Function          | Return Type   | Parameters                                 |
+    | :---------------- | :------------ | :----------------------------------------- |
+    | `createNode`      | `node*`       | `int value`                                |
+    | `insertAtEnd`     | `node*`       | `node **pointer_to_head, int value`        |
+    | `insertAtStart`   | `node*`       | `node **pointer_to_head, int value`        |
+    | `insertFromStart` | `node*`       | `node **pointer_to_head, int n, int value` |
+    | `deleteNode`      | `char` (bool) | `node *prev_node`                          |
+    | `deleteFromStart` | `node*`       | `node **pointer_to_head, int n`            |
+    | `deleteAtStart`   | `node*`       | `node **pointer_to_head`                   |
+    | `deleteFromEnd`   | `node*`       | `node **pointer_to_head, int n`            |
+    | `printLL`         | `node*`       | `node *head`                               |
+
 ---
 
 ## Assignment Questions
