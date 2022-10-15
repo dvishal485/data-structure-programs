@@ -30,6 +30,8 @@ node *insertAtStart(node **pointer_to_head, int value) {
 }
 
 void printLL(node *head) {
+    if(head==NULL)
+        printf("Empty Linked List!\n");
     printf("Linked List : ");
     while (head) {
         printf("%d, ", head->value);
@@ -40,9 +42,11 @@ void printLL(node *head) {
 
 int main() {
     node *head = NULL;
+    printLL(head);
     insertAtStart(&head, 25);
     printLL(head);
     insertAtStart(&head, 36);
+    printLL(head);
     insertFromStart(&head, 2, 49);
     printLL(head);
     return 0;

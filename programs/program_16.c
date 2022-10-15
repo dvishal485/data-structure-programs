@@ -22,7 +22,10 @@ int main() {
     for (int i = 1; i <= 7; i++)
         insertAtEnd(&head, i);
     printLL(head);
+    printf("\nSplitting original linked list into 2 sublists\n\n");
     splitLinkedList(head, &l1, &l2);
+    printf("Sublist 1 : ");
     printLL(l1);
+    printf("Sublist 2 : ");
     printLL(l2);
 }
