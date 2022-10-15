@@ -97,6 +97,7 @@
 1. [Write a program to implement insertion sort using linked list without destroying the original linked list](./programs/insertion_sort_ll.c)
 1. [Write a program to merge two linked list sorted in ascending order into one sorted linked list, and return it's head](./programs/merge_two_sorted.c)
 1. [Write a program to flatten a Binary Tree into a Linked List in order](./programs/bt_to_ll.c)
+1. [Write a program to check if given Binary Tree is a Binary Search Tree or not](./programs/checkBST.c)
 
 ---
 
