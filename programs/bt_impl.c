@@ -27,18 +27,6 @@ void inOrderTraversal(btNode *root) {
     }
 }
 
-void flattenToLL(btNode *root, node **flatten) {
-    if (!root) {
-        return;
-    } else {
-        if (root->left)
-            flattenToLL(root->left, flatten);
-        insertAtEnd(flatten, root->value);
-        if (root->right)
-            flattenToLL(root->right, flatten);
-    }
-}
-
 void btCountNodes(btNode *root, int *internal, int *leaf) {
     if (!root) {
         // null child
