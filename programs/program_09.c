@@ -16,13 +16,13 @@ int main(void) {
     scanf("%d %d", &a[0].row, &a[0].col);
     printf("Enter the elements of the matrix :\n");
     int x = 0;
-    for(int i=0; i<a[0].row; i++) {
-        for(int j=0; j<a[0].col; j++) {
+    for (int i = 0; i < a[0].row; i++) {
+        for (int j = 0; j < a[0].col; j++) {
             scanf("%d", &x);
-            if(x!=0) {
+            if (x != 0) {
                 a[0].value++;
-                a[a[0].value].row = i+1;
-                a[a[0].value].col = j+1;
+                a[a[0].value].row = i + 1;
+                a[a[0].value].col = j + 1;
                 a[a[0].value].value = x;
             }
         }
