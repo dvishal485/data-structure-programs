@@ -92,6 +92,7 @@
 ## Miscellaneous Programs
 
 1. [Write a program to implement insertion sort using linked list without destroying the original linked list](./programs/insertion_sort_ll.c)
+1. [Write a program to merge two linked list sorted in ascending order into one sorted linked list, and return it's head](./programs/merge_two_sorted.c)
 
 ---
 
