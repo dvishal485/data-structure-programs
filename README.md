@@ -1,60 +1,11 @@
-# DTU DS Lab File and Assignment (CO201)
-
-Delhi Technological University Lab Programs & Assignment Programs for Data Structures (Second Year) for the course CO201 submitted by Vishal Das
+# Data Structures and Algorithms
 
 **Table of Contents**
-- [DTU DS Lab File and Assignment (CO201)](#dtu-ds-lab-file-and-assignment-co201)
-  - [Programs included in the file](#programs-included-in-the-file)
+- [Data Structures and Algorithms](#data-structures-and-algorithms)
   - [Data Structure Implementations in C](#data-structure-implementations-in-c)
-  - [Assignment Questions](#assignment-questions)
-
----
-
-## Programs included in the file
-
-1. Write a C/C++ program to Implement Linear Search.
-    - [Implementation in C](./programs/program_01.c)
-    - [Implementation in C++](./programs/program_01.cpp)
-1. Write a C/C++ program to Implement Binary Search.
-    - [Implementation in C](./programs/program_02.c)
-    - [Implementation in C++](./programs/program_02.cpp)
-1. Write a C/C++ program to insert an element at the mid-position in the One-dimensional array.
-    - [Implementation in C](./programs/program_03.c)
-    - [Implementation in C++](./programs/program_03.cpp)
-1. Write a C/C++ program to delete a given row in the two-dimensional array.
-    - [Implementation in C](./programs/program_04.c)
-    - [Implementation in C++](./programs/program_04.cpp)
-1. Write a C/C++ program to implement a stack data structure and perform its operations.
-    - [Implementation in C](./programs/program_05.c)
-    - [Implementation in C++](./programs/program_05.cpp)
-1. Write a C/C++ program to implement two stacks using a single array.
-    - [Implementation in C](./programs/program_06.c)
-    - [Implementation in C++](./programs/program_06.cpp)
-1. Write a C/C++ program to find the minimum element of the stack in constant time with using extra space.
-    - [Implementation in C](./programs/program_07.c)
-    - [Implementation in C++](./programs/program_07.cpp)
-1. Write a C/C++  program to find the minimum element of the stack in constant time without using extra space.
-    - [Implementation in C](./programs/program_08.c)
-    - [Implementation in C++](./programs/program_08.cpp)
-1. Write a C/C++ program to create a sparse matrix using arrays.
-    - [Implementation in C](./programs/program_09.c)
-    - [Different approach in C](./programs/sparse_matrix.c)
-    - [Different approach in C++](./programs/sparse_matrix.cpp)
-1. Write a C/C++ program to perform the addition, multiplication and transpose operations on sparse matrix given in compact form.
-    - [Implementation in C](./programs/program_10.c)
-1. Write a C/C++ program to implement Queue Data structure.
-    - [Implementation in C](./programs/program_11.c)
-1. Write a  C/C++ program to reverse the first k elements of a given Queue.
-    - [Implementation in C](./programs/program_12.c)
-1. Write a C/C++ program to check whether the given string is Palindrome or not using Double Ended Queue (DEQUE).
-    - [Implementation in C](./programs/program_13.c)
-1. Write a C/C++ program to implement Tower of Hanoi Problem using Stack.
-1. Write a C/C++ program to implement the Linked List Data structure and insert a new node at the beginning, and at a given position.
-    - [Implementation in C](./programs/program_15.c)
-1. Write a C/C++ program to split a given linked list into two sub-list as Front sub-list and Back sub-list, if odd number of the element then add the last element into the front list.
-    - [Implementation in C](./programs/program_16.c)
-1. Given a Sorted doubly linked list of positive integers and an integer, finds all the pairs (sum of two nodes data part) that is equal to the given integer value.
-    - [Implementation in C](./programs/program_17.c)
+  - [DTU DS (CO201) Programs](#dtu-ds-co201-programs)
+    - [Programs included in the file](#programs-included-in-the-file)
+    - [Assignment Questions](#assignment-questions)
 
 ---
 
@@ -136,7 +87,59 @@ Delhi Technological University Lab Programs & Assignment Programs for Data Struc
 
 ---
 
-## Assignment Questions
+## DTU DS (CO201) Programs
+
+Delhi Technological University Lab Programs & Assignment Programs for Data Structures (Second Year) for the course CO201 submitted by Vishal Das
+
+### Programs included in the file
+
+1. Write a C/C++ program to Implement Linear Search.
+    - [Implementation in C](./programs/program_01.c)
+    - [Implementation in C++](./programs/program_01.cpp)
+1. Write a C/C++ program to Implement Binary Search.
+    - [Implementation in C](./programs/program_02.c)
+    - [Implementation in C++](./programs/program_02.cpp)
+1. Write a C/C++ program to insert an element at the mid-position in the One-dimensional array.
+    - [Implementation in C](./programs/program_03.c)
+    - [Implementation in C++](./programs/program_03.cpp)
+1. Write a C/C++ program to delete a given row in the two-dimensional array.
+    - [Implementation in C](./programs/program_04.c)
+    - [Implementation in C++](./programs/program_04.cpp)
+1. Write a C/C++ program to implement a stack data structure and perform its operations.
+    - [Implementation in C](./programs/program_05.c)
+    - [Implementation in C++](./programs/program_05.cpp)
+1. Write a C/C++ program to implement two stacks using a single array.
+    - [Implementation in C](./programs/program_06.c)
+    - [Implementation in C++](./programs/program_06.cpp)
+1. Write a C/C++ program to find the minimum element of the stack in constant time with using extra space.
+    - [Implementation in C](./programs/program_07.c)
+    - [Implementation in C++](./programs/program_07.cpp)
+1. Write a C/C++  program to find the minimum element of the stack in constant time without using extra space.
+    - [Implementation in C](./programs/program_08.c)
+    - [Implementation in C++](./programs/program_08.cpp)
+1. Write a C/C++ program to create a sparse matrix using arrays.
+    - [Implementation in C](./programs/program_09.c)
+    - [Different approach in C](./programs/sparse_matrix.c)
+    - [Different approach in C++](./programs/sparse_matrix.cpp)
+1. Write a C/C++ program to perform the addition, multiplication and transpose operations on sparse matrix given in compact form.
+    - [Implementation in C](./programs/program_10.c)
+1. Write a C/C++ program to implement Queue Data structure.
+    - [Implementation in C](./programs/program_11.c)
+1. Write a  C/C++ program to reverse the first k elements of a given Queue.
+    - [Implementation in C](./programs/program_12.c)
+1. Write a C/C++ program to check whether the given string is Palindrome or not using Double Ended Queue (DEQUE).
+    - [Implementation in C](./programs/program_13.c)
+1. Write a C/C++ program to implement Tower of Hanoi Problem using Stack.
+1. Write a C/C++ program to implement the Linked List Data structure and insert a new node at the beginning, and at a given position.
+    - [Implementation in C](./programs/program_15.c)
+1. Write a C/C++ program to split a given linked list into two sub-list as Front sub-list and Back sub-list, if odd number of the element then add the last element into the front list.
+    - [Implementation in C](./programs/program_16.c)
+1. Given a Sorted doubly linked list of positive integers and an integer, finds all the pairs (sum of two nodes data part) that is equal to the given integer value.
+    - [Implementation in C](./programs/program_17.c)
+
+---
+
+### Assignment Questions
 
 1. [Given the head of a linked list and an integer n, write a program to delete nth
 node from the end of linked list and return the head of new list.](./programs/assignments/assignment_01.c)
