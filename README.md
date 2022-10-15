@@ -86,6 +86,7 @@
     | `inOrderTraversal` | `void`      | `btNode *root`                           |
     | `btCountNodes`     | `void`      | `btNode *root, int *internal, int *leaf` |
     | `btHeight`         | `int`       | `btNode *root`                           |
+    | `flattenToLL`      | `int`       | `btNode *root, node **flatten`           |
 
 ---
 
