@@ -125,6 +125,15 @@ Delhi Technological University Lab Programs & Assignment Programs for Data Struc
     | `deleteFromEnd`   | `node*`       | `node **pointer_to_head, int n`            |
     | `printLL`         | `node*`       | `node *head`                               |
 
+1. [Binary Tree](./programs/bt_impl.c)
+
+    | Function           | Return Type | Parameters                               |
+    | :----------------- | :---------- | :--------------------------------------- |
+    | `createBtNode`     | `btNode*`   | `int value`                              |
+    | `inOrderTraversal` | `void`      | `btNode *root`                           |
+    | `btCountNodes`     | `void`      | `btNode *root, int *internal, int *leaf` |
+    | `btHeight`         | `int`       | `btNode *root`                           |
+
 ---
 
 ## Assignment Questions
