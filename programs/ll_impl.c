@@ -49,6 +49,21 @@ node *insertFromStart(node **pointer_to_head, int n, int value) {
     return fake_head.next;
 }
 
+node *arrayToLL(int arr[], int size) {
+    if (size <= 0)
+        return NULL;
+    node *head = createNode(arr[0]);
+    if (size == 1)
+        return head;
+    node *x = createNode(arr[1]);
+    head->next = x;
+    for (int i = 2; i < size; i++) {
+        x->next = createNode(arr[i]);
+        x = x->next;
+    }
+    return head;
+}
+
 char deleteNode(node *prev_node) {
     if (prev_node == NULL)
         return 0;

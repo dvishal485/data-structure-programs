@@ -76,6 +76,7 @@
     | `deleteAtStart`   | `node*`       | `node **pointer_to_head`                   |
     | `deleteFromEnd`   | `node*`       | `node **pointer_to_head, int n`            |
     | `printLL`         | `node*`       | `node *head`                               |
+    | `arrayToLL`       | `node*`       | `int arr[], int size`                      |
 
 1. [Binary Tree](./programs/bt_impl.c)
 
