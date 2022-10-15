@@ -3,6 +3,7 @@
 **Table of Contents**
 - [Data Structures and Algorithms](#data-structures-and-algorithms)
   - [Data Structure Implementations in C](#data-structure-implementations-in-c)
+  - [Miscellaneous Programs](#miscellaneous-programs)
   - [DTU DS (CO201) Programs](#dtu-ds-co201-programs)
     - [Programs included in the file](#programs-included-in-the-file)
     - [Assignment Questions](#assignment-questions)
@@ -84,6 +85,12 @@
     | `inOrderTraversal` | `void`      | `btNode *root`                           |
     | `btCountNodes`     | `void`      | `btNode *root, int *internal, int *leaf` |
     | `btHeight`         | `int`       | `btNode *root`                           |
+
+---
+
+## Miscellaneous Programs
+
+1. [Write a program to implement insertion sort using linked list without destroying the original linked list](./programs/insertion_sort_ll.c)
 
 ---
 
