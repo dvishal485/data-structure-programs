@@ -95,11 +95,11 @@
 
 ## Miscellaneous Programs
 
-1. [Write a program to implement insertion sort using linked list without destroying the original linked list.](./programs/insertion_sort_ll.c)
-1. [Write a program to merge two linked list sorted in ascending order into one sorted linked list, and return it's head.](./programs/merge_two_sorted.c)
-1. [Write a program to flatten a Binary Tree into a Linked List in order.](./programs/bt_to_ll.c)
-1. [Write a program to check if given Binary Tree is a Binary Search Tree or not.](./programs/checkBST.c)
-1. [Write a function which takes input a binary search tree T1 and returns a duplicate tree T2.](./programs/copy_bt.c)
+1. [Write a program to implement insertion sort using linked list without destroying the original linked list.](./programs/misc/insertion_sort_ll.c)
+1. [Write a program to merge two linked list sorted in ascending order into one sorted linked list, and return it's head.](./programs/misc/merge_two_sorted.c)
+1. [Write a program to flatten a Binary Tree into a Linked List in order.](./programs/misc/bt_to_ll.c)
+1. [Write a program to check if given Binary Tree is a Binary Search Tree or not.](./programs/misc/checkBST.c)
+1. [Write a function which takes input a binary search tree T1 and returns a duplicate tree T2.](./programs/misc/copy_bt.c)
 
 ---
 

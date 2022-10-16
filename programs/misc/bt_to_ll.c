@@ -1,5 +1,5 @@
-#include "bt_impl.c"
-#include "ll_impl.c"
+#include "../bt_impl.c"
+#include "../ll_impl.c"
 
 void flattenToLL(btNode *root, node **flatten) {
     if (!root) {

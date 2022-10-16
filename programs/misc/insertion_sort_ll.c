@@ -3,7 +3,7 @@
     without destroying the original linked list
 */
 
-#include "ll_impl.c"
+#include "../ll_impl.c"
 
 void insertionSortLL(node *head, node **ptr_to_head) {
     if (!head)

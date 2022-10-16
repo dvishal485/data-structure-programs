@@ -6,7 +6,7 @@ a node in the original tree, the corresponding node in the duplicate tree should
 not change.
 */
 
-#include "bt_impl.c"
+#include "../bt_impl.c"
 
 btNode *copy_bt(btNode *root) {
     if (!root) {

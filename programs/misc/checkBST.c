@@ -2,7 +2,7 @@
 Check if given binary tree is binary search tree or not
 */
 
-#include "bt_impl.c"
+#include "../bt_impl.c"
 
 int min;
 char init = 0;

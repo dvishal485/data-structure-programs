@@ -1,4 +1,4 @@
-#include "ll_impl.c"
+#include "../ll_impl.c"
 
 node *mergeTwoSortedLists(node *list1, node *list2) {
     if (!list1)
