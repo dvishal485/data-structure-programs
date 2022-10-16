@@ -100,6 +100,7 @@
 1. [Write a program to flatten a Binary Tree into a Linked List in order.](./programs/misc/bt_to_ll.c)
 1. [Write a program to check if given Binary Tree is a Binary Search Tree or not.](./programs/misc/checkBST.c)
 1. [Write a function which takes input a binary search tree T1 and returns a duplicate tree T2.](./programs/misc/copy_bt.c)
+1. [Write a program to remove all characters other than alphabets from string with fixed amount of additional storage area.](./programs/misc/remove_char.c)
 
 ---
 
