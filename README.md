@@ -89,7 +89,7 @@
     | `flattenToLL`      | `int`       | `btNode *root, node **flatten`           |
     | `areEquivalentBT`  | `char`      | `btNode *t1, btNode *t2`                 |
 
-    [For `flattenToLL`, refer here](./programs/bt_to_ll.c) 
+    [For `flattenToLL`, refer here](./programs/misc/bt_to_ll.c) 
 
 ---
 
