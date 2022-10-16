@@ -50,3 +50,14 @@ int btHeight(btNode *root) {
     int h2 = btHeight(root->right);
     return (h1 > h2) ? h1 + 1 : h2 + 1;
 }
+
+char areEquivalentBT(btNode *t1, btNode *t2) {
+    if (!t1 && !t2)
+        return 1;
+    else if (!t1 || !t2)
+        return 0;
+    else
+        return (t1->value == t2->value) &&
+               areEquivalentBT(t1->left, t2->left) &&
+               areEquivalentBT(t1->right, t2->right);
+}
