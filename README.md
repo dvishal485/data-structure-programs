@@ -103,6 +103,7 @@
 1. [Write a function which takes input a binary search tree T1 and returns a duplicate tree T2.](./programs/misc/copy_bt.c)
 1. [Write a program to remove all characters other than alphabets from string with fixed amount of additional storage area.](./programs/misc/remove_char.c)
 1. [Write an program to concatenate two doubly circular linked lists l1 and l2.](./programs/misc/concat_circularLL.c)
+1. [Write a program to construct Binary Tree from Preorder and Inorder Traversal.](./programs/misc/generateBT.c)
 
 ---
 
