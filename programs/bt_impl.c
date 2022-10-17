@@ -27,6 +27,18 @@ void inOrderTraversal(btNode *root) {
     }
 }
 
+void preOrderTraversal(btNode *root) {
+    if (!root) {
+        return;
+    } else {
+        printf("%d, ", root->value);
+        if (root->left)
+            inOrderTraversal(root->left);
+        if (root->right)
+            inOrderTraversal(root->right);
+    }
+}
+
 void btCountNodes(btNode *root, int *internal, int *leaf) {
     if (!root) {
         // null child

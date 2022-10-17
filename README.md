@@ -80,14 +80,15 @@
 
 1. [Binary Tree](./programs/bt_impl.c)
 
-    | Function           | Return Type | Parameters                               |
-    | :----------------- | :---------- | :--------------------------------------- |
-    | `createBtNode`     | `btNode*`   | `int value`                              |
-    | `inOrderTraversal` | `void`      | `btNode *root`                           |
-    | `btCountNodes`     | `void`      | `btNode *root, int *internal, int *leaf` |
-    | `btHeight`         | `int`       | `btNode *root`                           |
-    | `flattenToLL`      | `int`       | `btNode *root, node **flatten`           |
-    | `areEquivalentBT`  | `char`      | `btNode *t1, btNode *t2`                 |
+    | Function            | Return Type | Parameters                               |
+    | :------------------ | :---------- | :--------------------------------------- |
+    | `createBtNode`      | `btNode*`   | `int value`                              |
+    | `inOrderTraversal`  | `void`      | `btNode *root`                           |
+    | `preOrderTraversal` | `void`      | `btNode *root`                           |
+    | `btCountNodes`      | `void`      | `btNode *root, int *internal, int *leaf` |
+    | `btHeight`          | `int`       | `btNode *root`                           |
+    | `flattenToLL`       | `int`       | `btNode *root, node **flatten`           |
+    | `areEquivalentBT`   | `char`      | `btNode *t1, btNode *t2`                 |
 
     [For `flattenToLL`, refer here](./programs/misc/bt_to_ll.c) 
 
