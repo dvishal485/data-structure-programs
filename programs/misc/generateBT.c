@@ -9,22 +9,21 @@ https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-tr
 
 int _buildTreeSize, _buildTreeIndex;
 
-btNode *_buildTreeHelper(int *preorder, int *inorder, int start, int stop,
-                         int *index) {
-    if (!(*index < _buildTreeSize))
+btNode *_buildTreeHelper(int *preorder, int *inorder, int start, int stop) {
+    if (!(_buildTreeIndex < _buildTreeSize))
         return NULL;
-    btNode *tree = createBtNode(preorder[*index]);
+    btNode *tree = createBtNode(preorder[_buildTreeIndex]);
     int i;
-    for (i = start; preorder[*index] != inorder[i]; i++) {
+    for (i = start; preorder[_buildTreeIndex] != inorder[i]; i++) {
     };
 
     if (i > start) {
-        (*index)++;
-        tree->left = _buildTreeHelper(preorder, inorder, start, i - 1, index);
+        _buildTreeIndex++;
+        tree->left = _buildTreeHelper(preorder, inorder, start, i - 1);
     }
     if (i < stop) {
-        (*index)++;
-        tree->right = _buildTreeHelper(preorder, inorder, i + 1, stop, index);
+        _buildTreeIndex++;
+        tree->right = _buildTreeHelper(preorder, inorder, i + 1, stop);
     }
     return tree;
 }
@@ -32,7 +31,7 @@ btNode *_buildTreeHelper(int *preorder, int *inorder, int start, int stop,
 btNode *buildTree(int preorder[], int inorder[], int size) {
     _buildTreeIndex = 0;
     _buildTreeSize = size;
-    return _buildTreeHelper(preorder, inorder, 0, size, &_buildTreeIndex);
+    return _buildTreeHelper(preorder, inorder, 0, size);
 }
 
 int main() {
