@@ -160,6 +160,8 @@ Delhi Technological University Lab Programs & Assignment Programs for Data Struc
     - [Implementation in C](./programs/program_17.c)
 1. Write a C/C++ program to implement Stack Data Structure using Queue.
     - [Implementation in C](./programs/program_18.c)
+1. Write a C/C++ program to implement Queue Data Structure using Stack.
+    - [Implementation in C](./programs/program_19.c)
 
 ---
 
