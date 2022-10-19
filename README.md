@@ -23,6 +23,7 @@
     | `top`         | `int`         | `stack* s`           |
     | `isFull`      | `char` (bool) | `stack* s`           |
     | `isEmpty`     | `char` (bool) | `stack* s`           |
+    | `size`        | `int`         | `stack* s`           |
 
 1. [Queue](./programs/queue_impl.c)
 

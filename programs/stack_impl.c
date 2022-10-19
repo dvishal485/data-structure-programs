@@ -54,3 +54,5 @@ int top(stack *s) {
     printf("ERROR : Stack is empty");
     exit(EXIT_FAILURE);
 }
+
+int size(stack *s) { return s->top + 1; }
