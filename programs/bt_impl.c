@@ -33,9 +33,9 @@ void preOrderTraversal(btNode *root) {
     } else {
         printf("%d, ", root->value);
         if (root->left)
-            inOrderTraversal(root->left);
+            preOrderTraversal(root->left);
         if (root->right)
-            inOrderTraversal(root->right);
+            preOrderTraversal(root->right);
     }
 }
 
