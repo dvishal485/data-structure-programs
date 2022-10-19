@@ -62,3 +62,11 @@ int peek(circularQ *q) {
     }
     return q->arr[q->front];
 };
+
+int qSize(circularQ *q) {
+    if (isQEmpty(q))
+        return 0;
+    if (q->rear >= q->front)
+        return q->rear - q->front + 1;
+    return q->capacity - q->rear + q->front + 1;
+}

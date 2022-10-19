@@ -14,54 +14,55 @@
 
 1. [Stack](./programs/stack_impl.c)
 
-    | Function      | Return Type | Parameters           |
-    | :------------ | :---------- | :------------------- |
-    | `createStack` | `stack*`    | `int capacity`       |
-    | `readStack`   | `void`      | `stack* s`           |
-    | `pop`         | `void`      | `stack* s`           |
-    | `push`        | `void`      | `stack* s, int data` |
-    | `top`         | `int`       | `stack* s`           |
-    | `isFull`      | `char`      | `stack* s`           |
-    | `isEmpty`     | `char`      | `stack* s`           |
+    | Function      | Return Type   | Parameters           |
+    | :------------ | :------------ | :------------------- |
+    | `createStack` | `stack*`      | `int capacity`       |
+    | `readStack`   | `void`        | `stack* s`           |
+    | `pop`         | `void`        | `stack* s`           |
+    | `push`        | `void`        | `stack* s, int data` |
+    | `top`         | `int`         | `stack* s`           |
+    | `isFull`      | `char` (bool) | `stack* s`           |
+    | `isEmpty`     | `char` (bool) | `stack* s`           |
 
 1. [Queue](./programs/queue_impl.c)
 
-    | Function       | Return Type | Parameters            |
-    | :------------- | :---------- | :-------------------- |
-    | `createQ`      | `queue*`    | `int capacity`        |
-    | `showQ`        | `void`      | `queue* q`            |
-    | `dequeue`      | `void`      | `queue* q`            |
-    | `enqueue`      | `void`      | `queue* q, int value` |
-    | `peek`         | `int`       | `queue* q`            |
-    | `isQueueFull`  | `char`      | `queue* q`            |
-    | `isQueueEmpty` | `char`      | `queue* q`            |
+    | Function       | Return Type   | Parameters            |
+    | :------------- | :------------ | :-------------------- |
+    | `createQ`      | `queue*`      | `int capacity`        |
+    | `showQ`        | `void`        | `queue* q`            |
+    | `dequeue`      | `void`        | `queue* q`            |
+    | `enqueue`      | `void`        | `queue* q, int value` |
+    | `peek`         | `int`         | `queue* q`            |
+    | `isQueueFull`  | `char` (bool) | `queue* q`            |
+    | `isQueueEmpty` | `char` (bool) | `queue* q`            |
 
 1. [Circular Queue](./programs/circularQ_impl.c)
 
-    | Function   | Return Type  | Parameters                |
-    | :--------- | :----------- | :------------------------ |
-    | `createQ`  | `circularQ*` | `int capacity`            |
-    | `showQ`    | `void`       | `circularQ* q`            |
-    | `dequeue`  | `void`       | `circularQ* q`            |
-    | `enqueue`  | `void`       | `circularQ* q, int value` |
-    | `peek`     | `int`        | `circularQ* q`            |
-    | `isQFull`  | `char`       | `circularQ* q`            |
-    | `isQEmpty` | `char`       | `circularQ* q`            |
+    | Function   | Return Type   | Parameters                |
+    | :--------- | :------------ | :------------------------ |
+    | `createQ`  | `circularQ*`  | `int capacity`            |
+    | `showQ`    | `void`        | `circularQ* q`            |
+    | `dequeue`  | `void`        | `circularQ* q`            |
+    | `enqueue`  | `void`        | `circularQ* q, int value` |
+    | `peek`     | `int`         | `circularQ* q`            |
+    | `isQFull`  | `char` (bool) | `circularQ* q`            |
+    | `isQEmpty` | `char` (bool) | `circularQ* q`            |
+    | `qSize`    | `int`         | `circularQ* q`            |
 
 1. [Deque](./programs/deque_impl.c)
 
-    | Function      | Return Type | Parameters            |
-    | :------------ | :---------- | :-------------------- |
-    | `createDeque` | `deque*`    | `int capacity`        |
-    | `showFullQ`   | `void`      | `deque* q`            |
-    | `pop_back`    | `void`      | `deque* q`            |
-    | `pop_front`   | `void`      | `deque* q`            |
-    | `push_back`   | `void`      | `deque* q, int value` |
-    | `push_front`  | `void`      | `deque* q, int value` |
-    | `peek_back`   | `int`       | `deque* q`            |
-    | `peek_front`  | `int`       | `deque* q`            |
-    | `isQFull`     | `char`      | `deque* q`            |
-    | `isQEmpty`    | `char`      | `deque* q`            |
+    | Function      | Return Type   | Parameters            |
+    | :------------ | :------------ | :-------------------- |
+    | `createDeque` | `deque*`      | `int capacity`        |
+    | `showFullQ`   | `void`        | `deque* q`            |
+    | `pop_back`    | `void`        | `deque* q`            |
+    | `pop_front`   | `void`        | `deque* q`            |
+    | `push_back`   | `void`        | `deque* q, int value` |
+    | `push_front`  | `void`        | `deque* q, int value` |
+    | `peek_back`   | `int`         | `deque* q`            |
+    | `peek_front`  | `int`         | `deque* q`            |
+    | `isQFull`     | `char` (bool) | `deque* q`            |
+    | `isQEmpty`    | `char` (bool) | `deque* q`            |
 
 1. [Linked List](./programs/ll_impl.c)
 
@@ -80,15 +81,15 @@
 
 1. [Binary Tree](./programs/bt_impl.c)
 
-    | Function            | Return Type | Parameters                               |
-    | :------------------ | :---------- | :--------------------------------------- |
-    | `createBtNode`      | `btNode*`   | `int value`                              |
-    | `inOrderTraversal`  | `void`      | `btNode *root`                           |
-    | `preOrderTraversal` | `void`      | `btNode *root`                           |
-    | `btCountNodes`      | `void`      | `btNode *root, int *internal, int *leaf` |
-    | `btHeight`          | `int`       | `btNode *root`                           |
-    | `flattenToLL`       | `int`       | `btNode *root, node **flatten`           |
-    | `areEquivalentBT`   | `char`      | `btNode *t1, btNode *t2`                 |
+    | Function            | Return Type   | Parameters                               |
+    | :------------------ | :------------ | :--------------------------------------- |
+    | `createBtNode`      | `btNode*`     | `int value`                              |
+    | `inOrderTraversal`  | `void`        | `btNode *root`                           |
+    | `preOrderTraversal` | `void`        | `btNode *root`                           |
+    | `btCountNodes`      | `void`        | `btNode *root, int *internal, int *leaf` |
+    | `btHeight`          | `int`         | `btNode *root`                           |
+    | `flattenToLL`       | `int`         | `btNode *root, node **flatten`           |
+    | `areEquivalentBT`   | `char` (bool) | `btNode *t1, btNode *t2`                 |
 
     [For `flattenToLL`, refer here](./programs/misc/bt_to_ll.c) 
 
@@ -156,6 +157,8 @@ Delhi Technological University Lab Programs & Assignment Programs for Data Struc
     - [Implementation in C](./programs/program_16.c)
 1. Given a Sorted doubly linked list of positive integers and an integer, finds all the pairs (sum of two nodes data part) that is equal to the given integer value.
     - [Implementation in C](./programs/program_17.c)
+1. Write a C/C++ program to implement Stack Data Structure using Queue.
+    - [Implementation in C](./programs/program_18.c)
 
 ---
 
