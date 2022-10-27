@@ -11,7 +11,7 @@ char isBST(btNode *root) {
         return 1;
     } else {
         char x = isBST(root->left);
-        if (init && min >= root->value)
+        if (x == 0 ||  (init && min >= root->value))
             return 0;
         init = 1;
         min = root->value;
