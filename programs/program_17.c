@@ -63,6 +63,6 @@ int main() {
         l = x;
     }
     printLL(head);
-    twoSum(head, 10); // find pair of elemets for which sum = 10
+    twoSum(head, 10); // find pair of elements for which sum = 10
     return 0;
 }
