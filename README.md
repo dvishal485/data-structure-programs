@@ -181,5 +181,7 @@ its head. You must solve the problem without modifying the values in the linked
 list nodes. For a linked list with odd number of nodes, last node should not be
 swapped.](./programs/assignments/assignment_03.c)
 1. [Write a program to check if one tree appears in another tree.](./programs/assignments/assignment_04.c)
+2. [Write a program to construct binary search tree on given pre-order traversal of the tree
+and print the nodes level wise top to down and left to right.](./programs/assignments/assignment_05.c)
 
 ---
