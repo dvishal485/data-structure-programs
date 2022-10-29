@@ -180,5 +180,6 @@ approach.](./programs/assignments/assignment_02.c)
 its head. You must solve the problem without modifying the values in the linked
 list nodes. For a linked list with odd number of nodes, last node should not be
 swapped.](./programs/assignments/assignment_03.c)
+1. [Write a program to check if one tree appears in another tree.](./programs/assignments/assignment_04.c)
 
 ---
