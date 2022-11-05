@@ -164,6 +164,10 @@ Delhi Technological University Lab Programs & Assignment Programs for Data Struc
     - [Implementation in C](./programs/program_18.c)
 1. Write a C/C++ program to implement Queue Data Structure using Stack.
     - [Implementation in C](./programs/program_19.c)
+1. Write a C/C++ program to implement the Binary Tree using linked list and perform In-order traversal.
+    - [Implementation in C](./programs/program_20.c)
+1. Write a C/C++ program to check whether the given tree is a Binary Search Tree or not.
+    - [Implementation in C](./programs/program_21.c)
 
 ---
 

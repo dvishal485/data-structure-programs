@@ -1,23 +1,23 @@
-/*
-Check if given binary tree is binary search tree or not
-*/
+#include "./bt_impl.c"
 
-#include "../bt_impl.c"
-
-int min;
-char init = 0;
-char isBST(btNode *root) {
+char _isBST(btNode *root, int *min, char *init) {
     if (!root) {
         return 1;
     } else {
-        char x = isBST(root->left);
-        if (x == 0 ||  (init && min >= root->value))
+        char x = _isBST(root->left, min, init);
+        if (x == 0 || (*init && *min >= root->value))
             return 0;
-        init = 1;
-        min = root->value;
-        char y = isBST(root->right);
+        *init = 1;
+        *min = root->value;
+        char y = _isBST(root->right, min, init);
         return x && y;
     }
+}
+
+char isBST(btNode *root) {
+    int *min = (int *)malloc(sizeof(int));
+    char *init = (char *)malloc(sizeof(char));
+    return _isBST(root, min, init);
 }
 
 btNode *generate() {
