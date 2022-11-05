@@ -168,7 +168,7 @@ Delhi Technological University Lab Programs & Assignment Programs for Data Struc
     - [Implementation in C](./programs/program_20.c)
 1. Write a C/C++ program to check whether the given tree is a Binary Search Tree or not.
     - [Implementation in C](./programs/program_21.c)
-1. [AVL Tree Implementation in C](./programs/program_23-24.c)
+1. [AVL Tree Implementation in C](./programs/program_22-24.c)
     1. Write a C/C++ program to implement insertion in the AVL tree.  
     1. Write a C/C++ program to Delete a key from the AVL tree.
     2. Write a C/C++ program to count the number of leaf nodes in an AVL tree.

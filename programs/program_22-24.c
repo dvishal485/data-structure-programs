@@ -161,6 +161,7 @@ int main(void) {
     printf("Inorder traversal of the constructed AVL tree is :\n");
     printInorder(root);
     NEWLINE;
+    printf("\nNumber of leaf nodes in AVL tree : %d\n", countLeafNodes(root));
     printf("\nInput number of elements to be deleted from AVL tree : ");
     scanf("%d", &n);
     printf("\nInput elements to be deleted from AVL tree : ");
@@ -172,5 +173,6 @@ int main(void) {
     printf("\nInorder traversal of the AVL tree after deletion :\n");
     printInorder(root);
     NEWLINE;
+    printf("\nNumber of leaf nodes in AVL tree : %d\n", countLeafNodes(root));
     return 0;
 }
