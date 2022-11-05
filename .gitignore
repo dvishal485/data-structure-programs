@@ -6,10 +6,6 @@
 # VS Code
 .vscode/
 
-# Lab files
-*.docx
-*.pdf
-
 # Prerequisites
 *.d
 

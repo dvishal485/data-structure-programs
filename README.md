@@ -4,7 +4,8 @@
 - [Data Structures and Algorithms](#data-structures-and-algorithms)
   - [Data Structure Implementations in C](#data-structure-implementations-in-c)
   - [Miscellaneous Programs](#miscellaneous-programs)
-  - [DTU DS (CO201) Programs](#dtu-ds-co201-programs)
+  - [DTU DS (CO201) Programs and File](#dtu-ds-co201-programs-and-file)
+    - [Lab File](#lab-file)
     - [Programs included in the file](#programs-included-in-the-file)
     - [Assignment Questions](#assignment-questions)
 
@@ -110,9 +111,15 @@
 
 ---
 
-## DTU DS (CO201) Programs
+## DTU DS (CO201) Programs and File
 
 Delhi Technological University Lab Programs & Assignment Programs for Data Structures (Second Year) for the course CO201 submitted by Vishal Das
+
+### Lab File
+
+Lab File submitted by Vishal Das, for Data Structures (Second Year) for the course CO201
+- [Document Format](./ds_lab_file.docx)
+- [PDF Format](./ds_lab_file.pdf)
 
 ### Programs included in the file
 
