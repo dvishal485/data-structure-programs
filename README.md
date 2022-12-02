@@ -1,7 +1,7 @@
-# Data Structures and Algorithms
+# Data Structures
 
 **Table of Contents**
-- [Data Structures and Algorithms](#data-structures-and-algorithms)
+- [Data Structures](#data-structures)
   - [Data Structure Implementations in C](#data-structure-implementations-in-c)
   - [Miscellaneous Programs](#miscellaneous-programs)
   - [DTU DS (CO201) Programs and File](#dtu-ds-co201-programs-and-file)
