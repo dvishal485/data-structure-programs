@@ -126,6 +126,7 @@ Lab File submitted by Vishal Das, for Data Structures (Second Year) for the cour
 1. Write a C/C++ program to Implement Linear Search.
     - [Implementation in C](./programs/program_01.c)
     - [Implementation in C++](./programs/program_01.cpp)
+    - [Implementation in Rust](./programs/program_01.rs)
 1. Write a C/C++ program to Implement Binary Search.
     - [Implementation in C](./programs/program_02.c)
     - [Implementation in C++](./programs/program_02.cpp)
