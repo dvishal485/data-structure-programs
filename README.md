@@ -134,6 +134,7 @@ Lab File submitted by Vishal Das, for Data Structures (Second Year) for the cour
 1. Write a program to insert an element at the mid-position in the One-dimensional array.
     - [Implementation in C](./programs/program_03.c)
     - [Implementation in C++](./programs/program_03.cpp)
+    - [Implementation in Rust](./programs/program_03.rs)
 1. Write a program to delete a given row in the two-dimensional array.
     - [Implementation in C](./programs/program_04.c)
     - [Implementation in C++](./programs/program_04.cpp)
