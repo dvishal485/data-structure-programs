@@ -141,6 +141,7 @@ Lab File submitted by Vishal Das, for Data Structures (Second Year) for the cour
 1. Write a program to implement a stack data structure and perform its operations.
     - [Implementation in C](./programs/program_05.c)
     - [Implementation in C++](./programs/program_05.cpp)
+    - [Implementation in Rust](./programs/program_05.rs)
 1. Write a program to implement two stacks using a single array.
     - [Implementation in C](./programs/program_06.c)
     - [Implementation in C++](./programs/program_06.cpp)
